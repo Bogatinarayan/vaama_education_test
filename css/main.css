@@ -7974,7 +7974,7 @@ button.mfp-close,
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+ z-index: 1000;
 }
 .head-right {
   display: flex;
@@ -8133,6 +8133,7 @@ button.mfp-close,
   display: flex;
 }
 .header-box {
+  z-index: 1000;
   display: flex;
   height: var(--header-height);
 }
@@ -8205,6 +8206,7 @@ button.mfp-close,
   visibility: visible;
 }
 .nav-wrapper {
+  z-index: 2;
   position: fixed;
   width: 300px;
   height: 100vh;
@@ -11148,6 +11150,32 @@ button.mfp-close,
    max-height: 1000px;
    
 }
+.last11 {
+  padding: 8px 20px; /* Reduced padding */
+  font-size: 18px; /* Smaller font size */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase;
+  color: rgb(255, 255, 255); /* White text */
+  background: rgb(94, 145, 187); /* Blue background */
+  border: 2px solid transparent; /* Transparent border by default */
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none; /* Remove underline by default */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.last11:hover {
+  background: transparent; /* Remove background color on hover */
+  border: 2px solid rgb(62, 118, 223); /* Thin blue border on hover */
+  color: rgb(62, 118, 223); /* Change text color to blue on hover */
+  text-decoration: none; /* Remove underline on hover */
+  box-shadow: none; /* Remove any box-shadow on hover */
+}
+
 
 
 
